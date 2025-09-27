@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, ini32325753tial-scale=1.0" />
     <link rel="shortcut icon" href="https://iili.io/KBbAvFs.png" type="image/x-icon">
     <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows</title>
-    <script type="module" crossorigin src="./assets/index-DyuYhWB2.js"></script>
+    <script type="module" crossorigin src="./assets/index-CLb8NDBD.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CM9IPMzo.css">
   </head>
   <body>
@@ -296,7 +296,7 @@
     </main>
     </div>
    
-    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./public/swiper/swiper-bundle.min.js"></script>
 
   
   <script>
@@ -626,17 +626,15 @@
   //   disableOnInteraction: false,
   // },
 });
+</script>
+<script>
 
 var swiperVideos = new Swiper(".mySwiperVideos", {
-  loop: true,
+  // loop: true,
   // observer: true,
   // observeParents: true,
   slidesPerView: 1,
   spaceBetween: 0,
-  autoplay: {
-    delay:2000,
-    disableOnInteraction: false,
-  },
   pagination: {
     el: ".swiper-pagination-videos",
     clickable: true,
@@ -647,6 +645,10 @@ var swiperVideos = new Swiper(".mySwiperVideos", {
   },
   controller: {
     control: swiperUpNext,
+  },
+  autoplay: {
+    delay:4000,
+    disableOnInteraction: false,
   },
 });
 

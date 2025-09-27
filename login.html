@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://iili.io/KBbAvFs.png" type="image/x-icon">
+    <title>IMDb Sign-In</title>
+</head>
+<body>
+    <div class="flex justify-center items-center w-full py-3.5 cursor-pointer" id="imageLogin">
+        <a href="./index.html"></a>
+    </div>
+    <div class="w-[350px] border border-solid border-[#d2d4d4] rounded-lg mx-auto px-6 py-5 gap-5 flex flex-col">
+        <p class=" text-[30px] font-[AmazonEmber]">Sign in</p>
+        <form action="./index.html" class="flex flex-col  gap-3 font-[AmazonEmber]">
+            <div class="flex flex-col gap-0.5">
+                <label for="username" class="font-bold text-sm pl-1">Email or mobile phone number</label>
+                <input type="text" name="username" id="username" class=" border-[#8b8b8b] rounded-sm p-2 box-border h-8 border  focus:outline-2 outline-[#8b8b8b] focus:outline-offset-2 transition-[outline-offset] duration-150 ease-in-out focus:border-blue-800">
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <div class="flex flex-row items-center justify-between">
+                <label for="password" class="font-bold text-sm pl-1">Password</label>
+                <a href="#" class="text-blue-800 text-sm hover:underline cursor-pointer  hover:text-blue-950">Password assistance</a>
+                </div>
+                <input type="password" name="password" id="password"  class=" border-[#8b8b8b] rounded-sm w-full p-2 box-border h-8 border  focus:outline-2 outline-[#8b8b8b]  focus:border-blue-800 focus:outline-offset-2 transition-[outline-offset] duration-150 ease-in-out">
+            </div>
+            <div class=" flex flex-col gap-2">
+            <input type="submit" value="Sign in" class="w-full py-1.5 bg-[#FFD814] hover:bg-[#FFCE12] rounded-full text-sm cursor-pointer mt-3.5">
+                <div class="keep-me flex flex-row gap-1 justify-start items-center">
+                    <input type="checkbox" name="keepMe" id="keepMe" >
+                    <label for="keepMe" class="cursor-default text-[14px] select-none">Keep me signed in.</label>
+                    <p class="text-blue-800 hover:text-blue-950 text-[14px] hover:underline cursor-pointer " id="details">Details &DownArrow;</p>
+                 
+                </div>
+            </div>
+        </form>
+        <div class="w-full flex flex-col mt-8 gap-1.5">
+            <div class=" new-to-imdb w-full flex items-center justify-center">
+                <div class="w-full h-[1px] mx-auto bg-[#d2d4d4] relative"></div>
+                <p class="absolute z-10 bg-white px-1.5 text-[#5b5b5b] text-[12px]">New to IMDb?</p>
+            </div>
+            <a href="#" class="w-full py-1.5 rounded-full text-[13px] font-medium cursor-pointer mt-3.5 text-center border border-[#8b8b8b] text-[2b2b2b] hover:bg-[#F7FAFA]">Create your IMDb account</a>
+        </div>
+    </div>
+    <div class="w-[97%] h-0.5 mx-auto bg-[#d2d4d4] mt-8"></div>
+    <div class="flex flex-col items-center justify-center gap-2">
+        <div class="flex flex-row justify-center items-center gap-6 mt-10">
+            <a href="#" class="text-blue-800 text-[12px] hover:text-blue-950 hover:underline">Help</a>
+            <a href="#" class="text-blue-800 text-[12px] hover:text-blue-950 hover:underline">Conditions of Use</a>
+            <a href="#" class="text-blue-800 text-[12px] hover:text-blue-950 hover:underline">Privacy Notice</a>
+        </div>
+        <p class="text-[#5b5b5b] text-[12px]">&copy;1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </div>
+    <div class="w-[100%] h-[100vh] absolute top-0 bg-transparent z-30 invisible" id="datailsDiv">
+        <div class=" bg-white w-[420px] h-[150px] flex flex-col items-start justify-center border-[#a2a2a2] border p-4 box-border z-20 rounded-lg top-[24%] left-1/2 -translate-x-1/2  absolute" id="detailsText">
+            <div class="w-full flex flex-row items-center justify-between">
+                <p class="font-[AmazonEmberBold] text-[14px]">"Keep Me Signed In" Checkbox</p>
+                <p class="text-3xl cursor-pointer border border-[#2a2a2a] px-2 rounded-xl hover:text-[#5b5b5b]" id="keepMetimes">&times;</p>
+            </div>
+            <div class="flex flex-col gap-3.5">
+                <p class="text-sm">Choosing "Keep me signed in" reduces the number of times you're asked to Sign-In on this device.</p>
+            <p class="text-sm">To keep your account secure, use this option only on your personal devices.</p>
+            </div>
+        </div>
+       </div>
+    <script src="./assets/index-DyuYhWB2.js" type="module"></script>
+</body>
+</html>

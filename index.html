@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, ini32325753tial-scale=1.0" />
+    <link rel="shortcut icon" href="https://iili.io/KBbAvFs.png" type="image/x-icon">
+    <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows</title>
+    <script type="module" crossorigin src="./assets/index-DyuYhWB2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CM9IPMzo.css">
+  </head>
+  <body>
+    <div id="root" class="w-full bg-black overflow-x-hidden">
+      <!-- start header -->
+      <header class="w-full min-[992px]:px-[clamp(0px,calc((100vw-992px)*225/928),225px)] bg-[#121212] font-[AmazonEmber]  min-[0px]:px-7 py-2.5 ">
+        <ul class="flex flex-row text-white min-[992px]:gap-2 min-[0px]:gap-3.5 w-full justify-start items-center">
+        </ul>
+      </header>
+      <!-- end header -->
+        <main class="w-full min-[992px]:px-[clamp(0px,calc((100vw-992px)*225/928),225px)]">
+      <!-- start videos swiper -->
+       <div class="w-full flex min-[992px]:flex-row min-[0px]:flex-col  min-[992px]:gap-2 pt-10 select-none h-[547px] min-[0px]:px-2 box-border">
+        <div class="Videos h-full min-[0px]:w-full  min-[992px]:w-[68%] rounded-xl overflow-hidden ">
+          <div class="swiper mySwiperVideos">
+            <div class="swiper-wrapper swiper-videos">
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="upNext w-[32%] h-full min-[992px]:flex flex-col min-[0px]:hidden gap-3">
+          <p class="text-xl text-[#E2B616]  font-[AmazonEmberBold] h-[5%]" id="upNext"></p>
+          <div class="swiper mySwiperupNext h-[90%]">
+            <div class="swiper-wrapper swiper-upNext p-2.5">
+             
+            </div>
+          </div>
+          <a href="#" class="text-xl text-white hover:text-[#E2B616]  font-[AmazonEmberBold] h-[5%]" id="Browsertrailer"> <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+       </div>
+      <!-- end videos swiper -->
+
+      <!-- start Featured today -->
+       <div class="min-[0px]:w-full min-[992px]:w-[73%]  flex flex-col gap-4 items-start justify-start pt-10 min-[0px]:px-2 box-border max-[992px]:bg-[#121212]">
+        <div class="max-[992px]:ml-4" id="featured"></div>
+        <div class="featured w-full">
+          <div class="swiper mySwiperfeatured ">
+            <div class="swiper-wrapper featuredSlide text-white">
+     
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+       </div>
+      <!-- end Featured today -->
+
+      <!-- start popular celebrities -->
+       <div class="celebritiespopular  pt-10 flex flex-col items-start justify-start gap-4 select-none min-[0px]:px-2 box-border max-[992px]:bg-[#121212]">
+        <div class="w-fit flex items-center justify-start group cursor-pointer max-[992px]:ml-4" id="popCeleb">
+        </div>
+        <div class="swiper mySwipercelebritypopular">
+          <div class="swiper-wrapper celebpop  scroll-smooth">
+           
+          </div>
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+       </div>
+      <!-- end popular celebrities -->
+
+      <!-- start what to watch -->
+      <div class=" pt-10 flex flex-col items-start justify-start gap-3 min-[0px]:px-2 box-border w-full">
+        <div class="w-full flex min-[992px]:flex-row min-[0px]:flex-col max-[992px]:gap-3.5 items-start justify-between max-[992px]:ml-4" id="whatToWatch">
+          <a href="#" class="text-[15px] text-blue-400 p-2 rounded-full hover:bg-[#3232574a] transition" id="contentBtn1"> <i class="fa-solid fa-angle-right ml-2"></i></a>
+        </div>
+        <div class="w-full flex-col flex gap-4 items-start justify-start max-[992px]:bg-[#121212]">
+          <div class="w-full group max-[992px]:ml-4" id="watchList">
+
+          </div>
+          <div class="w-full flex flex-col items-center justify-center gap-5" id="contentWatchList">
+           
+          </div>
+        </div>
+       </div>
+      <!-- end what to watch -->
+
+      <!-- start top 10 -->
+       <div  class=" pt-10 flex flex-col items-start justify-start gap-4 min-[0px]:px-2 box-border mt-2 pb-3 max-[992px]:bg-[#121212]">
+        <div class="w-fit flex items-center justify-start border-l-4 border-[#E2B616]  max-[992px]:ml-4">
+          <p class="text-white text-2xl text-start font-[AmazonEmberBold] ml-2" id="top10"> </p>
+        </div>
+        
+        <div class="w-full top10Onweek">
+          <div class="swiper mySwipertop10">
+            <div class="swiper-wrapper top10">
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+       </div>
+      <!-- end top 10 -->
+
+      <!-- start fan favorites -->
+      <div  class=" pt-10 flex flex-col items-start justify-start gap-3 min-[0px]:px-2 box-border max-[992px]:bg-[#121212] mt-2 pb-3">
+        <div class="w-full flex flex-col items-start justify-start text-start max-[992px]:ml-4" id="favorites">
+        </div>
+        <div class="w-full fanFavorites">
+          <div class="swiper mySwiperfavorites">
+            <div class="swiper-wrapper favorites">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+       </div>
+      <!-- end fan favorites -->
+
+      <!-- start interests -->
+       <div class=" pt-10 flex flex-col items-start justify-start gap-3 min-[0px]:px-2 box-border max-[992px]:bg-[#121212] mt-2 pb-3">
+        <div class="w-fit flex items-center justify-start  cursor-pointer group max-[992px]:ml-4" id="interests">
+
+        </div>
+        <div class="w-full popularinterests">
+          <div class="swiper mySwiperinterests">
+            <div class="swiper-wrapper interests">
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+          </div>
+        </div>
+       </div>
+      <!-- end interests --> 
+
+      <!-- start exclusive -->
+      <div class=" pt-10 flex flex-col items-start justify-start gap-3 min-[0px]:px-2 box-border">
+        <div class="w-full flex flex-col items-start justify-start gap-11 max-[992px]:ml-4 " >
+        <div class="w-full flex flex-col gap-3" id="headExclusive">
+          <div class="w-full" id="subHeadExclusive"></div>
+        </div>
+          </div>
+          <div class="w-full exclusiveVideos max-[992px]:bg-[#121212] mt-2 pb-3">
+            <div class="swiper mySwiperexclusive">
+              <div class="swiper-wrapper exclusive">
+            
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>                 
+        </div>
+        <!-- end exclusive -->
+      
+
+      <!-- start explore -->
+       <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border max-[992px]:bg-[#121212] mt-2 pb-3">
+          <div class="w-full flex min-[992px]:flex-row min-[0px]:flex-col min-[992px]:items-center  min-[0px]:items-start justify-between max-[992px]:gap-4 max-[992px]:ml-4" id="exploreHead">
+           
+          </div>
+          <div id="" class="w-full exploreListStream">
+            <div class="swiper mySwiperexploreList">
+              <div class="swiper-wrapper exploreList">
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div id="" class="w-full exploreStreaming">
+            <div class="text-white text-[15px] py-3 box-border w-full max-[992px]:ml-4"   id="headerExplore" ></div>
+            <div class="swiper mySwiperexplore">
+              <div class="swiper-wrapper explore">
+                
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+       </div>
+      <!-- end explore -->
+
+      <!-- start explore movies & TV  -->
+      <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border max-[992px]:bg-[#121212] mt-2 pb-3">
+        <div class="w-full flex min-[992px]:flex-row min-[0px]:flex-col min-[992px]:items-center min-[0px]:items-start justify-between max-[992px]:gap-4 max-[992px]:ml-4 mb-10" id="headmovise">
+
+        </div>
+        <div class="w-full flex flex-col items-start justify-start gap-5">
+          <div class="w-full flex flex-col items-start justify-start max-[992px]:ml-4" id="topboxtitle">
+           
+          </div>
+          <div class=" w-full min-[992px]:grid min-[0px]:flex flex-col grid-flow-col grid-cols-2 grid-rows-3" id="contentGrid"></div>
+        </div>
+      </div>
+      <!-- end explore movies & TV  -->
+
+      <!-- start coomingSoon -->
+       <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border max-[992px]:bg-[#121212] mt-2 pb-3">
+        <div class="w-full max-[992px]:ml-4" id="headComingSoon"></div>
+        <div class="w-full comingSoon">
+          <div class="swiper mySwiperComingSoon">
+            <div class="swiper-wrapper comingSoonDiv">
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+       </div>
+      <!-- end coomingSoon -->
+
+
+
+      <!-- more to explore -->
+       <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border">
+        <div class="w-full mb-10" id="headMoreToExplore"></div>
+        <div class="flex flex-col justify-start items-start gap-2.5 w-full moreToExplore max-[992px]:bg-[#121212] mt-2 py-3">
+          <div class="text-start" id="editorPicks"></div>
+          <div class="swiper mySwiperExploreToMore ">
+            <div class="swiper-wrapper editorpicks">
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+       </div>
+      <!-- end to explore -->
+
+
+      <!-- start born today -->
+      <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border bornToday max-[992px]:bg-[#121212] mt-2 pb-3">
+        <div class="w-full" id="headBornToday"></div>
+        <div class="swiper mySwiperBornToday">
+          <div class="swiper-wrapper bornTodayDiv">
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- end born today -->
+
+      <!-- start top news -->
+       <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border">
+        <div class="w-full headTopNews"></div>
+        <div class="w-full flex min-[992px]:flex-row min-[0px]:flex-col">
+          <div class="min-[992px]:w-[65%] min-[0px]:w-full min-[0px]:flex flex-col min-[620px]:grid grid-cols-2 grid-rows-3 grid-flow-col gridTopNews gap-2 select-none">
+
+          </div>
+          <div class="min-[992px]:w-[35%] min-[0px]:w-full border border-[gray] rounded-md p-4 box-border flex flex-wrap gap-5 h-fit  flex-col" id="moreNews">
+            <p class="text-[13px] tracking-[2px] text-start text-white font-[AmazonEmberBold]"></p>
+            <div class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+       </div>
+      <!-- end top news -->
+
+      <!-- start recently viewed -->
+       <div class=" pt-10 flex flex-col items-start justify-start gap-1 min-[0px]:px-2 box-border">
+        <div class="w-full recently mb-10 text-start text-white text-2xl font-[AmazonEmberBold] cursor-default"></div>
+
+        <div class="contentRecently text-[16px] font-[AmazonEmber] text-white text-start"></div>
+       </div>
+      <!-- end recently viewed -->
+
+
+
+      <!-- start footer -->
+       <footer class=" pt-10 flex flex-col items-start justify-start gap-4 min-[0px]:px-2 box-border pb-5">
+        <div class=" w-full flex flex-col justify-center items-center gap-6  box-border">
+          <div class="w-full flex items-center justify-center btnSignFooter"></div>
+          <div class="w-full flex min-[992px]:flex-row min-[0px]:flex-col items-center justify-center gap-4 Media">
+            <div class="w-[400px] flex flex-col items-center justify-center gap-1 border border-[gray] rounded-xl py-4 social">
+              <p class="text-white text-[22px] font-[AmazonEmberBold]"></p>
+              <div class="flex flex-row items-center justify-center gap-6"></div>
+            </div>
+            <div class="w-[400px] flex flex-row  items-center justify-between border border-[gray] rounded-xl py-5.5 px-4 QRcode">
+              <div class="flex flex-col gap-2 justify-center items-start "></div>
+              <div class="QR hover:brightness-90 transition cursor-pointer rounded-md w-fit h-fit bg-white p-1 " ></div>
+            </div>
+          </div>
+          <div class=" w-full flex-col flex items-center justify-center gap-3 footerLinks">
+            <div class="flex flex-row items-center justify-center gap-8 flex-wrap" id="link1"></div>
+            <div class="flex flex-row items-center justify-center gap-8 flex-wrap" id="link2"></div>
+          </div>
+        </div>
+        <div id="amazon" class="w-full text-center text-[14px]"></div>
+        <div id="copy" class="w-full text-center text-[gray] text-[12px]"></div>
+       </footer>
+      <!-- end footer -->
+    </main>
+    </div>
+   
+    <script src="./swiper/swiper-bundle.min.js"></script>
+
+  
+  <script>
+    var swiper = new Swiper(".mySwiperfeatured", {
+      spaceBetween: 15,
+      speed: 600,
+      slidesPerGroup: 2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
+    992: {
+      slidesPerView: 2.1,
+      slidesPerGroup: 2
+    }
+  }
+    });
+  </script>
+ <script>
+  var swiper = new Swiper(".mySwipercelebritypopular", {
+
+  speed: 600,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2.5,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 4.5,
+      slidesPerGroup: 4
+    },
+    992: {
+      slidesPerView: 6,
+      slidesPerGroup: 6
+    }
+  }
+});
+
+</script>
+<script>
+  var swiper = new Swiper(".mySwipertop10", {
+    spaceBetween: 15,
+    speed:600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2.5,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 4.5,
+      slidesPerGroup: 4
+    },
+    992: {
+      slidesPerView: 6,
+      slidesPerGroup: 6
+    }
+  }
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperfavorites", {
+    spaceBetween: 15,
+    speed:600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2.5,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 4.5,
+      slidesPerGroup: 4
+    },
+    992: {
+      slidesPerView: 6,
+      slidesPerGroup: 6
+    }
+  }
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperinterests", {
+    spaceBetween: 15,
+    speed:600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 2.9,
+      slidesPerGroup: 2
+    },
+    992: {
+      slidesPerView: 4,
+      slidesPerGroup: 4
+    }
+  }
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperexclusive", {
+    spaceBetween: 15,
+    speed:600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.3,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 2.1,
+      slidesPerGroup: 2
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    }
+  }
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperexploreList", {
+    spaceBetween: 0,
+    speed:600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 4.3,
+      slidesPerGroup: 2
+    },
+    600: {
+      slidesPerView: 6,
+      slidesPerGroup: 2.5
+    },
+    992: {
+      slidesPerView: 10,
+      slidesPerGroup: 10
+    }
+  }
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperexplore", {
+    spaceBetween: 15,
+    speed:600,
+    // slidesPerGroup: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // mousewheel: {
+  //     forceToAxis: true,
+  //     sensitivity: 1,
+  //   },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 2.5,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 4.5,
+      slidesPerGroup: 4
+    },
+    992: {
+      slidesPerView: 6,
+      slidesPerGroup: 6
+    }
+  }
+  });
+</script>
+<script>
+   var swiper = new Swiper(".mySwiperComingSoon", {
+    spaceBetween: 15,
+    speed:600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.3,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 2.1,
+      slidesPerGroup: 2
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    }
+  }
+  });
+</script>
+<script>
+   var swiper = new Swiper(".mySwiperExploreToMore", {
+      spaceBetween: 15,
+      speed: 600,
+      slidesPerGroup: 2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    }
+  }
+    });
+
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperBornToday", {
+
+  speed: 600,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2.5,
+      slidesPerGroup: 1
+    },
+    600: {
+      slidesPerView: 4.5,
+      slidesPerGroup: 4
+    },
+    992: {
+      slidesPerView: 6,
+      slidesPerGroup: 6
+    }
+  }
+});
+
+</script>
+    <script>
+     var swiperUpNext = new Swiper(".mySwiperupNext", {
+  direction: "vertical",
+  slidesPerView: 3, 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+  // autoplay: {
+  //   delay:2000,
+  //   disableOnInteraction: false,
+  // },
+});
+
+var swiperVideos = new Swiper(".mySwiperVideos", {
+  loop: true,
+  // observer: true,
+  // observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay:2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-videos",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  controller: {
+    control: swiperUpNext,
+  },
+});
+
+swiperUpNext.controller.control = swiperVideos;
+
+    </script>
+    
+  </body>
+</html>
